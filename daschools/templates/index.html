@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js'></script>
+  
+  <title>Proyect 2</title>
+  <link href="{{ url_for('static', filename='css/multiple.css') }}" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+  
+   <style>
+     body {
+     font-family: Arial, Helvetica, sans-serif;}
+    </style> 
+</head>
+
+<body>
+
+<div class="item">
+     <!--   <nav class="navbar" style="background-color: #474C53; height:50px;">
+        <span class="navbar-brand mx-auto h1" style="color:white;font-weight:bold;width: 200px;vertical-align: middle; text-align: center;">Perspective on further education in Mexico 2017-2018</span>
+      </nav> -->
+
+      <nav class="navbar" style="background-color: #474C53; height:35px;">
+        <a href="http://daschools.herokuapp.com" ; class="navbar-brand mx-auto h1" style="color:white;font-weight:bold; width:680px; vertical-align: middle; text-align: center;">Perspective on further education in Mexico 2017-2018</span>
+      </nav>
+    
+    <iframe src="{{ url_for('static', filename='html/iframe.html') }}" height="680" width="100%" align="middle" scrolling="no"></iframe>
+
+  <script src="static/js/multiple.min.js"></script>
+  <script>
+        var multiple = new Multiple({selector: '.item', background: "url({{ url_for('static', filename='images/background2.jpg') }})"});
+  </script>
+
+</div>
+ 
+</body>
+</html>
