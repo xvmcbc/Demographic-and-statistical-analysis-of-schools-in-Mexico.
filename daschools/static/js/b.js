@@ -1,5 +1,5 @@
-var url = "http://localhost:5000/info";
-//var url = "http://daschools.herokuapp.com/info";
+//var url = "http://localhost:5000/info";
+var url = "http://daschools.herokuapp.com/info";
 //var data1 = [];
 //var data2 = [];
 var cuenta_pub = 0;
@@ -11,8 +11,8 @@ var cuenta_Mpriv = 0;
 
 // create 2 data_set with initial values
 var data1 = [
-   {group: "Public", value: 2708714},
-   {group: "Particular", value: 1590100}
+   {group: "Public", value: 861651},
+   {group: "Particular", value: 1311199}
 ];
 
 var data2 = [
@@ -83,7 +83,7 @@ svg.append("g")
 
 // Add Y axis
 var y = d3.scaleLinear()
-  .domain([0, 5000000])
+  .domain([0, 4000000])
   .range([ height, 0]);
 svg.append("g")
   .attr("class", "myYaxis")
