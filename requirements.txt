@@ -16,7 +16,7 @@ decorator==4.4.0
 defusedxml==0.6.0
 entrypoints==0.3
 Flask==1.0.3
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-PyMongo==2.3.0
 Flask-SQLAlchemy==2.4.0
 gunicorn==19.9.0
